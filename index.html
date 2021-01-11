@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Online Schooling | Survey Page</title>
+</head>
+<body>
+     <main class="fixed-background">
+          <div class="container">
+               <!-- Title -->
+               <section class="text-center title-div">
+                    <h1 id="title">Survey on Online Schooling</h1>
+                    <p id="description" class="subtitle">How is Central High School of Ilmulon dealing with classes online? Thank you for taking the survey!</p>
+               </section>
+               <section class="form-section">
+                    <form action="#" id="survey-form" method="POST">
+                         <label for="name" id="name-label" class="label-control">Name and surname</label>
+                         <input type="text" name="name" id="name" class="form-control" placeholder="Tvrtko Kotoromanić">
+     
+                         <label for="email" id="email-label" class="label-control">Email</label>
+                         <input type="text" name="email" id="email" class="form-control" placeholder="tvrtko@kotoromanic.ba">
+     
+                         <label for="age" id="number-label" class="label-control" class="label-control">Age (optional)</label>
+                         <input 
+                         type="number" 
+                         name="age" 
+                         id="age" 
+                         placeholder="Age"
+                         min="13" max="65"
+                         class="form-control">
+     
+                         <label for="role" class="label-control">You are a...</label>
+                         <select id="dropdown" name="role" class="form-control">
+                              <option disabled selected value>Select current role</option>
+                              <option value="student">Student</option>
+                              <option value="professor">Professor</option>
+                              <option value="parent">Parent</option>
+                              <option value="other">Other</option>
+                         </select>
+     
+                         <label for="rating" class="label-control">How would you rate the school's performance in delivering online classes?</label>
+                         <label class="radio-control">
+                         <input type="radio" name="rating" value="poor">
+                         Poor</label>
+     
+                         <label class="radio-control">
+                         <input type="radio" name="rating" value="ok">
+                         OK</label>
+     
+                         <label class="radio-control">
+                         <input type="radio" name="rating" value="solid">
+                         Solid</label>
+     
+                         <label class="radio-control">
+                         <input type="radio" name="rating" value="great">
+                         Great</label>
+     
+                         <label class="radio-control">
+                         <input type="radio" name="rating" value="excellent">
+                         Excellent</label>
+     
+                         <label for="best-don">What has the school done the best?</label>
+                         <select id="dropdown-best-done" name="best-done">
+                              <option disabled selected value>Select the best accomplishment</option>
+                              <option value="communication">Communication with the students</option>
+                              <option value="parent-comms">Communication with the parents</option>
+                              <option value="homework">Intriguing homework assignments</option>
+                              <option value="lectures">Live video lecturing</option>
+                              <option value="relaxation">Organized multiplayer game lobbys</option>
+                         </select>
+     
+                         <label for="improvement">What could bee improved</label>
+                         <label class="checkbox-control">
+                         <input type="checkbox" name="improvement" value="communication">
+                         Communication with the students</label>
+     
+                         <label class="checkbox-control">
+                         <input type="checkbox" name="improvement" value="parent-comms">
+                         Communication with the parents</label>
+     
+                         <label class="checkbox-control">
+                         <input type="checkbox" name="improvement" value="homework">
+                         Intriguing homework assignments</label>
+     
+                         <label class="checkbox-control">
+                         <input type="checkbox" name="improvement" value="lectures">
+                         Live video lecturing</label>
+     
+                         <label class="checkbox-control">
+                         <input type="checkbox" name="improvement" value="relaxation">
+                         Organized multiplayer game lobbys</label>
+     
+                         <label class="checkbox-control">
+                         <input type="checkbox" name="improvement" value="other">
+                         Other (Explain in the comment area)</label>
+     
+                         <label for="comment">Add your comment or suggestion</label>
+                         <input type="textarea">
+     
+                         <button type="submit" id="submit" class="btn btn-primary btn-submit">
+                              Submit your input
+                         </button>
+                    </form>
+               </section>
+          </div>
+     </main>
+     
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
