@@ -33,7 +33,8 @@
      
                          <label for="role" class="label-control">You are a...</label>
                          <select id="dropdown" name="role" class="form-control">
-                              <option disabled selected value>Select current role</option>
+                              <option class="dropdown-selected-value" disabled selected value>
+                                   Select current role</option>
                               <option value="student">Student</option>
                               <option value="professor">Professor</option>
                               <option value="parent">Parent</option>
@@ -42,27 +43,27 @@
      
                          <label for="rating" class="label-control">How would you rate the school's performance in delivering online classes?</label>
                          <label class="radio-control">
-                         <input type="radio" name="rating" value="poor">
+                         <input type="radio" name="rating" value="poor" class="input-radio">
                          Poor</label>
      
                          <label class="radio-control">
-                         <input type="radio" name="rating" value="ok">
+                         <input type="radio" name="rating" value="ok" class="input-radio">
                          OK</label>
      
                          <label class="radio-control">
-                         <input type="radio" name="rating" value="solid">
+                         <input type="radio" name="rating" value="solid" class="input-radio">
                          Solid</label>
      
                          <label class="radio-control">
-                         <input type="radio" name="rating" value="great">
+                         <input type="radio" name="rating" value="great" class="input-radio">
                          Great</label>
      
                          <label class="radio-control">
-                         <input type="radio" name="rating" value="excellent">
+                         <input type="radio" name="rating" value="excellent" class="input-radio">
                          Excellent</label>
      
-                         <label for="best-don">What has the school done the best?</label>
-                         <select id="dropdown-best-done" name="best-done">
+                         <label for="best-don" class="label-control">What has the school done the best?</label>
+                         <select id="dropdown-best-done" name="best-done" class="form-control">
                               <option disabled selected value>Select the best accomplishment</option>
                               <option value="communication">Communication with the students</option>
                               <option value="parent-comms">Communication with the parents</option>
@@ -71,7 +72,7 @@
                               <option value="relaxation">Organized multiplayer game lobbys</option>
                          </select>
      
-                         <label for="improvement">What could bee improved</label>
+                         <label for="improvement" class="label-control">What could be improved</label>
                          <label class="checkbox-control">
                          <input type="checkbox" name="improvement" value="communication">
                          Communication with the students</label>
@@ -96,10 +97,12 @@
                          <input type="checkbox" name="improvement" value="other">
                          Other (Explain in the comment area)</label>
      
-                         <label for="comment">Add your comment or suggestion</label>
-                         <input type="textarea">
+                         <label for="comment" class="label-control">Add your comment or suggestion</label>
+                         <textarea class="form-control text-area" id="comments" name="comment"
+                         placeholder="Enter your comment here...">
+                         </textarea>
      
-                         <button type="submit" id="submit" class="btn btn-primary btn-submit">
+                         <button type="submit" id="submit" class="form-control btn">
                               Submit your input
                          </button>
                     </form>
