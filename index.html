@@ -17,22 +17,22 @@
                <section class="form-section">
                     <form action="#" id="survey-form" method="POST">
                          <label for="name" id="name-label" class="label-control">Name and surname</label>
-                         <input type="text" name="name" id="name" class="form-control" placeholder="Tvrtko Kotoromanić">
+                         <input type="text" name="name" id="name" class="form-control" placeholder="Tvrtko Kotoromanić" required>
      
                          <label for="email" id="email-label" class="label-control">Email</label>
-                         <input type="text" name="email" id="email" class="form-control" placeholder="tvrtko@kotoromanic.ba">
+                         <input type="email" name="email" id="email" class="form-control" placeholder="tvrtko@kotoromanic.ba" required>
      
                          <label for="age" id="number-label" class="label-control" class="label-control">Age (optional)</label>
                          <input 
                          type="number" 
                          name="age" 
-                         id="age" 
+                         id="number" 
                          placeholder="Age"
                          min="13" max="65"
                          class="form-control">
      
                          <label for="role" class="label-control">You are a...</label>
-                         <select id="dropdown" name="role" class="form-control">
+                         <select id="dropdown" name="role" class="form-control" required>
                               <option class="dropdown-selected-value" disabled selected value>
                                    Select current role</option>
                               <option value="student">Student</option>
@@ -98,9 +98,7 @@
                          Other (Explain in the comment area)</label>
      
                          <label for="comment" class="label-control">Add your comment or suggestion</label>
-                         <textarea class="form-control text-area" id="comments" name="comment"
-                         placeholder="Enter your comment here...">
-                         </textarea>
+                         <textarea placeholder="Enter your comment here..." class="form-control text-area" id="comments" name="comment"></textarea>
      
                          <button type="submit" id="submit" class="form-control btn">
                               Submit your input

@@ -59,7 +59,6 @@ form > * {
 }
 
 input::placeholder,
-textarea::placeholder,
 .dropdown-selected-value,
 select {
      width: 100%;
@@ -133,6 +132,14 @@ select {
      resize: vertical;
      margin-bottom: 20px;
      padding: 10px 20px;
+     font-family: inherit;
+     font-size: 20px;
+}
+
+.text-area::placeholder {
+     font-size: 16px;
+     color: #333333;
+     font-family: "Titillium Web", sans-serif;
 }
 
 .btn {
@@ -151,3 +158,4 @@ select {
      text-decoration: underline 5px #f4f4f4;
      transform: scaleY(1.05);
 }
+
